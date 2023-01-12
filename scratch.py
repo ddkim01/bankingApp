@@ -13,4 +13,9 @@
 # TO-DO list:
 # idk how to get black to work properly
 # how to start virtual environment everytime i open vs code or a new terminal
-#
+
+
+
+
+
+# test ing ree asdf  
