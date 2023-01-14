@@ -11,9 +11,7 @@
 
 import requests
 
-from bankingApp.utils import authTokenData
-
-accessToken = "up:yeah:maW5zK0VEhvPisXf3E1OBdfDNieJEYK5nEPsHbsf7preN1jY9nP1esf5qMMhue75Ohzgu0aLxzKsv1cYpa5cxnKPeLnXSEOoE4gnz3upe9pw9YlxP97AzN2ucF29KJwK"
+from utils import authTokenData
 
 
 def spenderBalance(authToken):
@@ -26,9 +24,9 @@ def spenderBalance(authToken):
     )
 
     data = (response.json())["data"][0]["attributes"]["balance"]["value"]
-    print(data)
+    return data
 
 
+accessToken = "up:yeah:maW5zK0VEhvPisXf3E1OBdfDNieJEYK5nEPsHbsf7preN1jY9nP1esf5qMMhue75Ohzgu0aLxzKsv1cYpa5cxnKPeLnXSEOoE4gnz3upe9pw9YlxP97AzN2ucF29KJwK"
 print(spenderBalance(accessToken))
-
 
